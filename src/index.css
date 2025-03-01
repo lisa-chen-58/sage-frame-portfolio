@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Ruthie&family=Chonburi&family=Expletus+Sans&family=Raleway&display=swap');
+
+@theme {
+    --color-primary: #2f3e46;      /* Deep Forest Green */
+    --color-secondary: #354f52;    /* Dark Slate Green */
+    --color-tertiary: #52796f;     /* Muted Teal */
+    --color-quaternary: #84a98c;   /* Soft Sage */
+    --color-quinary: #cad2c5;      /* Pale Mint */
+
+    --font-heading: 'Chonburi', serif;
+    --font-title: 'Raleway', sans-serif;
+    --font-body: 'Expletus Sans', sans-serif;
+    --font-decorative: 'Ruthie', cursive;
+
+}
+@layers base {
+    :root {
+    /* To use: "text-[var(--text-color)]" */
+        --text-color: #f8f9fa;         /* Soft Off-White for Contrast */
+        --box-color: #d8e2dc;          /* Light Muted Greenish-Beige */
+    }
+}
+
+/* Hide scrollbar but keep functionality */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* Custom scrollbar styles */
+.scrollbar-custom::-webkit-scrollbar {
+  width: 6px;
+}
+
+.scrollbar-custom::-webkit-scrollbar-thumb {
+  background: rgba(53, 79, 82, 0.7); /* Semi-transparent */
+  border-radius: 20px;
+}
+
+.scrollbar-custom::-webkit-scrollbar-thumb:hover {
+  background: rgba(47, 62, 70, 0.9);
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeInUp {
+  animation: fadeInUp 2s ease-out forwards;
+}
+
+@keyframes floatAndGlow {
+  0% {
+    transform: translateY(0px);
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.3);
+  }
+  50% {
+    transform: translateY(-3px);
+    box-shadow: 0px 0px 35px rgba(255, 255, 255, 0.6); /* White Glow */
+  }
+  100% {
+    transform: translateY(0px);
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.3);
+  }
+}
+
+.animate-floatAndGlow {
+  animation: floatAndGlow 4s ease-in-out infinite;
+}
+
+
+.hover-effect:hover {
+  transform: scale(1.1);
+  text-shadow: 0px 4px 10px rgba(255, 165, 0, 0.7);
+  transition: all 0.3s ease-in-out;
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.animate-gradient {
+  background-size: 200% 200%;
+  animation: gradientShift 5s ease-in-out infinite;
+}
+
+@keyframes softGlow {
+  0% {
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 12px rgba(255, 255, 255, 0.7);
+  }
+  100% {
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.3);
+  }
+}
+
+.animate-softGlow {
+  animation: softGlow 4s infinite ease-in-out;
+}
+
+@keyframes shinyGlow {
+  0% { text-shadow: 0 0 5px rgba(91, 192, 235, 0.4), 0 0 10px rgba(255, 140, 66, 0.3); } /* Teal & Copper */
+  50% { text-shadow: 0 0 15px rgba(91, 192, 235, 0.8), 0 0 30px rgba(255, 140, 66, 0.6); } /* Stronger Glow */
+  100% { text-shadow: 0 0 5px rgba(91, 192, 235, 0.4), 0 0 10px rgba(255, 140, 66, 0.3); }
+}
+
+.animate-shinyGlow {
+  animation: shinyGlow 3s infinite ease-in-out;
+}
+
+
+@import "tailwindcss";
