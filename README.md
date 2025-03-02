@@ -3,6 +3,10 @@
 ## 🚀 Overview
 This is a **portfolio template** built with **React**, **Vite**, and **Tailwind CSS**. You can use this as a starting point for your own portfolio website.
 
+### What this portfolio looks like (Sample)
+![image](https://github.com/user-attachments/assets/412287ed-4106-4582-afb2-0ce2f9dfac21)
+
+
 ## 📌 How to Use This Template
 This repository is a **GitHub Template Repo**, meaning you can create your own copy without forking! Here's how:
 
