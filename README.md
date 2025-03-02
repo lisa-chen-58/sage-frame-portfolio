@@ -130,7 +130,7 @@ To add a contact form to your portfolio, you can use [Formspree](https://formspr
 2. Create a new form and copy the endpoint URL provided.
 - This form uses name, email and message and the format can be found under the ModalContactForm component.
 - You can modify this to however you see fit.
-3. Add this to the `/src/data/data.json` file under pageInfo > formKey.
+3. Replace `insertFormLink` in `/src/data/data.json` file under pageInfo > formKey.
 
 Formspree handles the backend processing and forwards form submissions to your email.
 
@@ -151,4 +151,7 @@ vercel
 Since this is a template repository, users create independent copies. If you'd like to contribute, consider forking instead of using the template.
 
 ## 📜 License
-This template is free to use and modify. If you make improvements, consider sharing them with the community!
+This project is licensed under the **MIT License** – you're free to use and modify it. If you improve the template, consider sharing your contributions with the community!
+
+## 📝 Issues & Feedback
+If you run into any issues using this template, feel free to open an issue on GitHub or suggest improvements!
