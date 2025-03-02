@@ -1,35 +1,63 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useState, useEffect } from "react";
+import { HelmetProvider } from "react-helmet-async";
+import {
+  AboutSection,
+  ContactCard,
+  Footer,
+  Header,
+  ModalContactForm,
+  NavBar,
+  Projects,
+  SEO,
+  WavyDivider,
+} from "./components";
+import devProfile from "./data/data.json";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const { user, pageInfo, projects, name } = devProfile;
+
+  useEffect(() => {
+    if ("scrollRestoration" in window.history) {
+      window.history.scrollRestoration = "manual";
+    }
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <div className="min-h-screen bg-gradient-to-r from-[#b0c4b1] via-[var(--color-tertiary)] to-[var(--color-primary)] bg-opacity-100 text-[var(--text-color)]">
+      <HelmetProvider>
+        <SEO pageInfo={pageInfo} />
+      </HelmetProvider>
+
+      <NavBar pageInfo={pageInfo} />
+
+      <div className="pt-20">
+        <Header user={user} />
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+
+      <WavyDivider flip={false} />
+      <AboutSection user={user} pageInfo={pageInfo} />
+      <WavyDivider flip={true} />
+      <Projects projects={projects} pageInfo={pageInfo} />
+      <WavyDivider flip={false} />
+
+      <ContactCard
+        isModalOpen={isModalOpen}
+        setIsModalOpen={setIsModalOpen}
+        pageInfo={pageInfo}
+      />
+      <ModalContactForm
+        isOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
+        pageInfo={pageInfo}
+      />
+
+      <WavyDivider flip={true} />
+
+      <Footer name={name} pageInfo={pageInfo} />
+    </div>
+  );
 }
 
-export default App
+export default App;

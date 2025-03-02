@@ -15,7 +15,7 @@ This repository is a **GitHub Template Repo**, meaning you can create your own c
    ```
 4. Install dependencies:
    ```sh
-   npm install
+   npm install react@18 react-dom@18 react-helmet
    ```
 5. Start the development server:
    ```sh
@@ -29,58 +29,72 @@ All personal information and content for the portfolio are stored in the `src/da
 ### ✏ Example `data.json` Structure
 ```json
 {
-   "pageInfo": {
-      "LinkedIn": "https://www.linkedin.com/in/buffy-slayer/",
-      "pageUrl": "",
-      "title": "SlayCode() → Stake Vampire!",
-      "tagline": "CODING IS COOL.",
-      "startYear": 2025,
-      "footerMessage": "Am I the foot? Or the face of this website?"
-   },
-   "user": {
-      "avatar": "/assets/avatar.png",
-      "avatarAlt": "avatar of vampire selfie",
-      "profilePic": "/assets/selfie.jpg",
-      "profilePicAlt": "slayer taking selfie",
-      "logo": "/assets/logo.png",
-      "name": "Dawn Braker",
-      "title": "Vampire Slayer",
-      "titleTagline1": "I put the ‘fun’ in funeral,",
-      "titleTagline2": "bloodsuckers",
-      "languages": ["ByteFang", "HexLang", "DemonScript"],
-      "experience": {
-         "currentCompany": "Slayer Extraordinaire"
-      }
-   },
-   "projects": [
-      {
-         "name": "Hellmouth Mapper",
-         "description": "A web app built with React & Tailwind that maps supernatural hotspots.",
-         "stack": ["React", "Tailwind", "Firebase"],
-         "status": "Completed",
-         "github": "https://github.com/buffy/hellmouth-mapper",
-         "liveDemo": "",
-         "image": "/assets/hellmouth-mapper.png"
-      },
-      {
-         "name": "Demon Karaoke Night",
-         "description": "A karaoke platform for demons, vampires, and humans. Hosted on Wix. No biting allowed!",
-         "stack": ["JavaScript", "Wix"],
-         "status": "Completed",
-         "github": "",
-         "liveDemo": "https://demonkaraoke.com",
-         "image": "/assets/default.png"
-      },
-      {
-         "name": "Watcher’s Log",
-         "description": "A full-stack app for tracking vampire activity, apocalypse schedules, and overdue slayer training.",
-         "stack": ["Java", "Spring Boot", "PostgreSQL"],
-         "status": "To Do",
-         "github": "https://github.com/buffy/watchers-log",
-         "liveDemo": "",
-         "image": "/assets/default.png"
-      }
-   ]
+  "pageInfo": {
+    "LinkedIn": "https://www.linkedin.com/in/buffy-slayer/",
+    "pageUrl": "insertDeployedPage",
+    "title": "SlayCode() → Stake Vampire!",
+    "tagline": "CODING IS COOL.",
+    "header1": "About Me",
+    "header2": "Projects",
+    "header3": "Contact",
+    "contactMessage": "Slayer? Student? I'm here",
+    "formKey": "insertFormLink",
+    "startYear": 2025,
+    "defaultImage": "../../src/assets/default.jpg",
+    "footerMessage": "Am I the foot? Or the face of this website?"
+  },
+  "user": {
+    "avatar": "../../src/assets/avatar.jpg",
+    "avatarAlt": "avatar of vampire selfie",
+    "profilePic": "../../src/assets/selfie.jpg",
+    "profilePicAlt": "slayer taking selfie",
+    "logo": "../../src/assets/logo.jpg",
+    "name": "Dawn Braker",
+    "title": "Vampire Slayer",
+    "titleTagline": "I put the ‘fun’ in funeral, bloodsuckers!",
+    "languages": ["ByteFang", "HexLang", "DemonScript"],
+    "paragraph1": "Being a vampire slayer means constantly walking the line between life and death, armed with nothing but wit, skill, and a well-placed stake.",
+    "paragraph2": "It’s a lonely but necessary path, where the night is filled with lurking shadows and ancient enemies thirsting for blood.",
+    "paragraph3": "At the end of the day, it’s not just about slaying monsters—it’s aboutIt’s a lonely but necessary path, where the night is filled with lurking shadows and ancient enemies thirsting for blood. At the end of the day, it’s not just about slaying monsters—it’s about protecting those who never even realize the darkness that almost consumed them."
+  },
+  "projects": [
+    {
+      "name": "Slayer Portfolio",
+      "description": "Personal website built with React & Tailwind.",
+      "stack": ["React", "Tailwind", "Firebase"],
+      "status": "Completed",
+      "github": "https://github.com/lisa-chen-58/portfolio-template-sage",
+      "liveDemo": "",
+      "image": ""
+    },
+    {
+      "name": "Hellmouth Mapper",
+      "description": "A web app built with React & Tailwind that maps supernatural hotspots.",
+      "stack": ["Stake++", "Tailwind", "Hellbase"],
+      "status": "Completed",
+      "github": "https://github.com/lisa-chen-58/portfolio-template-sage",
+      "liveDemo": "https://www.youtube.com/watch?v=xvFZjo5PgG0",
+      "image": "../../src/assets/hellmouth-mapper.jpg"
+    },
+    {
+      "name": "Demon Karaoke Night",
+      "description": "A karaoke platform for demons, vampires, and humans. Hosted on Wix. No biting allowed!",
+      "stack": ["JavaStake", "Wixcraft"],
+      "status": "Completed",
+      "github": "https://github.com/lisa-chen-58/portfolio-template-sage",
+      "liveDemo": "https://www.youtube.com/watch?v=xvFZjo5PgG0",
+      "image": "../../src/assets/demon-oke.jpg"
+    },
+    {
+      "name": "Watcher’s Log",
+      "description": "A full-stack app for tracking vampire activity, apocalypse schedules, and overdue slayer training.",
+      "stack": ["HellLang", "Spring Fangwork", "CryptSQL"],
+      "status": "Completed",
+      "github": "https://github.com/lisa-chen-58/portfolio-template-sage",
+      "liveDemo": "https://www.youtube.com/watch?v=xvFZjo5PgG0",
+      "image": "../../src/assets/default.jpg"
+    }
+  ]
 }
 ```
 
@@ -102,6 +116,18 @@ To generate a production-ready build, run:
 npm run build
 ```
 This will create an optimized version of the site in the `dist/` folder.
+
+## ✉️ Setting Up Formspree for Contact Forms
+
+To add a contact form to your portfolio, you can use [Formspree](https://formspree.io/). Follow these steps to set up a form:
+
+1. Go to [Formspree](https://formspree.io/) and sign up for an account.
+2. Create a new form and copy the endpoint URL provided.
+- This form uses name, email and message and the format can be found under the ModalContactForm component.
+- You can modify this to however you see fit.
+3. Add this to the `/src/data/data.json` file under pageInfo > formKey.
+
+Formspree handles the backend processing and forwards form submissions to your email.
 
 ## 🚀 Deployment
 You can deploy this project using any static hosting service that supports Vite builds. Some options include:
