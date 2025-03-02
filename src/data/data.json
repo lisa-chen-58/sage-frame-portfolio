@@ -10,15 +10,15 @@
     "contactMessage": "Slayer? Student? I'm here",
     "formKey": "insertFormLink",
     "startYear": 2025,
-    "defaultImage": "../../src/assets/default.jpg",
+    "defaultImage": "/assets/default.jpg",
     "footerMessage": "Am I the foot? Or the face of this website?"
   },
   "user": {
-    "avatar": "../../src/assets/avatar.jpg",
+    "avatar": "/assets/avatar.jpg",
     "avatarAlt": "avatar of vampire selfie",
-    "profilePic": "../../src/assets/selfie.jpg",
+    "profilePic": "/assets/selfie.jpg",
     "profilePicAlt": "slayer taking selfie",
-    "logo": "../../src/assets/logo.jpg",
+    "logo": "/assets/logo.jpg",
     "name": "Dawn Braker",
     "title": "Vampire Slayer",
     "titleTagline": "I put the ‘fun’ in funeral, bloodsuckers!",
@@ -45,7 +45,7 @@
       "status": "Completed",
       "github": "https://github.com/lisa-chen-58/portfolio-template-sage",
       "liveDemo": "https://www.youtube.com/watch?v=xvFZjo5PgG0",
-      "image": "../../src/assets/hellmouth-mapper.jpg"
+      "image": "/assets/hellmouth-mapper.jpg"
     },
     {
       "name": "Demon Karaoke Night",
@@ -54,7 +54,7 @@
       "status": "Completed",
       "github": "https://github.com/lisa-chen-58/portfolio-template-sage",
       "liveDemo": "https://www.youtube.com/watch?v=xvFZjo5PgG0",
-      "image": "../../src/assets/demon-oke.jpg"
+      "image": "/assets/demon-oke.jpg"
     },
     {
       "name": "Watcher’s Log",
@@ -63,7 +63,7 @@
       "status": "Completed",
       "github": "https://github.com/lisa-chen-58/portfolio-template-sage",
       "liveDemo": "https://www.youtube.com/watch?v=xvFZjo5PgG0",
-      "image": "../../src/assets/default.jpg"
+      "image": "/assets/default.jpg"
     }
   ]
 }

@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 
 const ModalContactForm = ({ isOpen, onClose, pageInfo }) => {
-  const { formKey } = pageInfo;
+  const { header3, formKey } = pageInfo;
 
   useEffect(() => {
     const handleEscape = (event) => {
@@ -44,7 +44,7 @@ const ModalContactForm = ({ isOpen, onClose, pageInfo }) => {
           ✕
         </button>
         <h2 className="text-3xl font-title text-center text-[var(--color-secondary)] mb-4">
-          Access Granted: Let's Talk
+           { header3 }
         </h2>
         <form action={formKey} method="POST" className="space-y-4">
           <label className="block text-sm font-medium">Your Name</label>
