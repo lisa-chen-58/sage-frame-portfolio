@@ -24,77 +24,78 @@ This repository is a **GitHub Template Repo**, meaning you can create your own c
 6. Open your browser and navigate to the displayed local development URL (typically `http://localhost:5173/`).
 
 ## 🛠 Customizing Your Portfolio
-All personal information and content for the portfolio are stored in the `src/data/data.json` file. Simply edit this file to customize your portfolio.
+All personal information and content for the portfolio are stored in the `/src/data/data.json` file. Simply edit this file to customize your portfolio.
 
 ### ✏ Example `data.json` Structure
 ```json
 {
-  "pageInfo": {
-    "LinkedIn": "https://www.linkedin.com/in/buffy-slayer/",
-    "pageUrl": "insertDeployedPage",
-    "title": "SlayCode() → Stake Vampire!",
-    "tagline": "CODING IS COOL.",
-    "header1": "About Me",
-    "header2": "Projects",
-    "header3": "Contact",
-    "contactMessage": "Slayer? Student? I'm here",
-    "formKey": "insertFormLink",
-    "startYear": 2025,
-    "defaultImage": "../../src/assets/default.jpg",
-    "footerMessage": "Am I the foot? Or the face of this website?"
-  },
-  "user": {
-    "avatar": "../../src/assets/avatar.jpg",
-    "avatarAlt": "avatar of vampire selfie",
-    "profilePic": "../../src/assets/selfie.jpg",
-    "profilePicAlt": "slayer taking selfie",
-    "logo": "../../src/assets/logo.jpg",
-    "name": "Dawn Braker",
-    "title": "Vampire Slayer",
-    "titleTagline": "I put the ‘fun’ in funeral, bloodsuckers!",
-    "languages": ["ByteFang", "HexLang", "DemonScript"],
-    "paragraph1": "Being a vampire slayer means constantly walking the line between life and death, armed with nothing but wit, skill, and a well-placed stake.",
-    "paragraph2": "It’s a lonely but necessary path, where the night is filled with lurking shadows and ancient enemies thirsting for blood.",
-    "paragraph3": "At the end of the day, it’s not just about slaying monsters—it’s aboutIt’s a lonely but necessary path, where the night is filled with lurking shadows and ancient enemies thirsting for blood. At the end of the day, it’s not just about slaying monsters—it’s about protecting those who never even realize the darkness that almost consumed them."
-  },
-  "projects": [
-    {
-      "name": "Slayer Portfolio",
-      "description": "Personal website built with React & Tailwind.",
-      "stack": ["React", "Tailwind", "Firebase"],
-      "status": "Completed",
-      "github": "https://github.com/lisa-chen-58/portfolio-template-sage",
-      "liveDemo": "",
-      "image": ""
-    },
-    {
-      "name": "Hellmouth Mapper",
-      "description": "A web app built with React & Tailwind that maps supernatural hotspots.",
-      "stack": ["Stake++", "Tailwind", "Hellbase"],
-      "status": "Completed",
-      "github": "https://github.com/lisa-chen-58/portfolio-template-sage",
-      "liveDemo": "https://www.youtube.com/watch?v=xvFZjo5PgG0",
-      "image": "../../src/assets/hellmouth-mapper.jpg"
-    },
-    {
-      "name": "Demon Karaoke Night",
-      "description": "A karaoke platform for demons, vampires, and humans. Hosted on Wix. No biting allowed!",
-      "stack": ["JavaStake", "Wixcraft"],
-      "status": "Completed",
-      "github": "https://github.com/lisa-chen-58/portfolio-template-sage",
-      "liveDemo": "https://www.youtube.com/watch?v=xvFZjo5PgG0",
-      "image": "../../src/assets/demon-oke.jpg"
-    },
-    {
-      "name": "Watcher’s Log",
-      "description": "A full-stack app for tracking vampire activity, apocalypse schedules, and overdue slayer training.",
-      "stack": ["HellLang", "Spring Fangwork", "CryptSQL"],
-      "status": "Completed",
-      "github": "https://github.com/lisa-chen-58/portfolio-template-sage",
-      "liveDemo": "https://www.youtube.com/watch?v=xvFZjo5PgG0",
-      "image": "../../src/assets/default.jpg"
-    }
-  ]
+   "pageInfo": {
+      "LinkedIn": "https://www.linkedin.com/in/buffy-slayer/",
+      "pageUrl": "insertDeployedPage",
+      "title": "SlayCode() → Stake Vampire!",
+      "tagline": "CODING IS COOL.",
+      "header1": "About Me",
+      "header2": "Projects",
+      "header3": "Contact",
+      "contactMessage": "Slayer? Student? I'm here",
+      "formKey": "insertFormLink",
+      "startYear": 2025,
+      "defaultImage": "../../src/assets/default.jpg",
+      "footerMessage": "Am I the foot? Or the face of this website?"
+   },
+   "user": {
+      "avatar": "../../src/assets/avatar.jpg",
+      "avatarAlt": "avatar of vampire selfie",
+      "profilePic": "../../src/assets/selfie.jpg",
+      "profilePicAlt": "slayer taking selfie",
+      "logo": "../../src/assets/logo.jpg",
+      "name": "Dawn Braker",
+      "title": "Vampire Slayer",
+      "titleTagline": "I put the ‘fun’ in funeral, bloodsuckers!",
+      "aboutTagline": "I don't debug, I exterminate.",
+      "languages": ["ByteFang", "HexLang", "DemonScript"],
+      "paragraph1": "Being a vampire slayer means constantly walking the line between life and death, armed with nothing but wit, skill, and a well-placed stake.",
+      "paragraph2": "It’s a lonely but necessary path, where the night is filled with lurking shadows and ancient enemies thirsting for blood.",
+      "paragraph3": "At the end of the day, it’s not just about slaying monsters—it’s about protecting those who never even realize the darkness that almost consumed them."
+   },
+   "projects": [
+      {
+         "name": "Slayer Portfolio",
+         "description": "Personal website built with React & Tailwind.",
+         "stack": ["React", "Tailwind", "Firebase"],
+         "status": "Completed",
+         "github": "https://github.com/lisa-chen-58/portfolio-template-sage",
+         "liveDemo": "",
+         "image": ""
+      },
+      {
+         "name": "Hellmouth Mapper",
+         "description": "A web app built with React & Tailwind that maps supernatural hotspots.",
+         "stack": ["Stake++", "Tailwind", "Hellbase"],
+         "status": "Completed",
+         "github": "https://github.com/lisa-chen-58/portfolio-template-sage",
+         "liveDemo": "https://www.youtube.com/watch?v=xvFZjo5PgG0",
+         "image": "../../src/assets/hellmouth-mapper.jpg"
+      },
+      {
+         "name": "Demon Karaoke Night",
+         "description": "A karaoke platform for demons, vampires, and humans. Hosted on Wix. No biting allowed!",
+         "stack": ["JavaStake", "Wixcraft"],
+         "status": "Completed",
+         "github": "https://github.com/lisa-chen-58/portfolio-template-sage",
+         "liveDemo": "https://www.youtube.com/watch?v=xvFZjo5PgG0",
+         "image": "../../src/assets/demon-oke.jpg"
+      },
+      {
+         "name": "Watcher’s Log",
+         "description": "A full-stack app for tracking vampire activity, apocalypse schedules, and overdue slayer training.",
+         "stack": ["HellLang", "Spring Fangwork", "CryptSQL"],
+         "status": "Completed",
+         "github": "https://github.com/lisa-chen-58/portfolio-template-sage",
+         "liveDemo": "https://www.youtube.com/watch?v=xvFZjo5PgG0",
+         "image": "../../src/assets/default.jpg"
+      }
+   ]
 }
 ```
 
