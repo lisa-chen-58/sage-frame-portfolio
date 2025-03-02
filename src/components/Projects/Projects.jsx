@@ -18,7 +18,10 @@ const Projects = ({ projects = [], pageInfo }) => {
       className="mx-auto max-w-4xl p-10 mb-12 rounded-xl shadow-xl border-2 border-[var(--color-secondary)]
       bg-gradient-to-br from-[var(--color-tertiary)] via-[var(--color-quaternary)] to-[var(--color-quinary)] bg-opacity-90"
     >
-      <h2 className="text-4xl font-heading text-center bg-gradient-to-r from-[#4B2E1E] via-[#5F4B32] to-[#4B2E1E] text-transparent bg-clip-text relative w-full drop-shadow-lg mb-6">
+      <h2
+          className="text-4xl font-heading text-center bg-gradient-to-r from-[var(--color-senary)] via-[var(--color-septenary)] to-[var(--color-octonary)]
+          text-transparent bg-clip-text relative w-full drop-shadow-lg mb-6"
+      >
         {header2}
         <span className="absolute -bottom-2 left-1/2 w-20 h-[3px] bg-[var(--color-tertiary)] transform -translate-x-1/2"></span>
       </h2>

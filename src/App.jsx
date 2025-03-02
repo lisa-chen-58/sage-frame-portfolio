@@ -25,7 +25,7 @@ function App() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-gradient-to-r from-[#b0c4b1] via-[var(--color-tertiary)] to-[var(--color-primary)] bg-opacity-100 text-[var(--text-color)]">
+    <div className="min-h-screen bg-gradient-to-r from-[var(--color-quaternary)] via-[var(--color-tertiary)] to-[var(--color-primary)] bg-opacity-100 text-[var(--text-color)]">
       <HelmetProvider>
         <SEO pageInfo={pageInfo} />
       </HelmetProvider>
@@ -46,6 +46,7 @@ function App() {
         isModalOpen={isModalOpen}
         setIsModalOpen={setIsModalOpen}
         pageInfo={pageInfo}
+        user={user}
       />
       <ModalContactForm
         isOpen={isModalOpen}
