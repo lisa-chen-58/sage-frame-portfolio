@@ -1,8 +1,15 @@
 # Portfolio Template README
 
 ## 🚀 Overview
-This is a **portfolio template** built with **React**, **Vite**, and **Tailwind CSS**. You can use this as a starting point for your own portfolio website.
+​The Sage Frame Portfolio is a template designed to help developers create personal portfolios using React, Vite, and Tailwind CSS. This combination offers a modern development environment with efficient build processes and customizable styling.​
 
+### Key Features:
+
+**React**: A popular JavaScript library for building user interfaces, enabling the creation of reusable components.​
+
+**Vite**: A build tool that provides a faster and leaner development experience compared to traditional bundlers.​
+
+**Tailwind CSS**: A utility-first CSS framework that allows for rapid UI development with a consistent design system.
 
 ### What this portfolio looks like (Sample)
 ![SageFrame1](https://github.com/user-attachments/assets/3d441193-b46c-470a-bd4c-b8fd1aca1321)
