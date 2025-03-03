@@ -3,8 +3,9 @@
 ## 🚀 Overview
 This is a **portfolio template** built with **React**, **Vite**, and **Tailwind CSS**. You can use this as a starting point for your own portfolio website.
 
+
 ### What this portfolio looks like (Sample)
-![image](https://github.com/user-attachments/assets/412287ed-4106-4582-afb2-0ce2f9dfac21)
+![SageFrame1](https://github.com/user-attachments/assets/3d441193-b46c-470a-bd4c-b8fd1aca1321)
 * Check out the [Live Demo!](https://sage-frame.web.app/insertFormLink)
 
 
