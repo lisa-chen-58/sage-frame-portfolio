@@ -17,7 +17,7 @@ const Header = ({ user, pageInfo }) => {
           {/* 🔹 Name + (Optional) Logo */}
           <div className="flex items-center gap-3 transition-transform duration-200 hover:scale-110 hover:drop-shadow-lg">
 
-            <h1 className="text-4xl md:text-5xl font-heading text-[var(--color-unique-text)]
+            <h1 className="text-4xl md:text-5xl text-center font-heading text-[var(--color-unique-text)]
               drop-shadow-[0_0_10px_rgba(0,0,0,0.85)] transition-transform duration-200 hover:scale-110 hover:text-[var(--color-unique-text)]">
               {name}
             </h1>
