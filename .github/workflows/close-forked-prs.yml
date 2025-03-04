@@ -1,0 +1,25 @@
+name: Auto-Close PRs from Forks
+
+on:
+  pull_request:
+    types: [opened]
+
+jobs:
+  close-forked-pr:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check if PR is from a Fork
+        run: |
+          PR_AUTHOR="${{ github.event.pull_request.user.login }}"
+          PR_HEAD_REPO="${{ github.event.pull_request.head.repo.full_name }}"
+          BASE_REPO="${{ github.repository }}"
+
+          if [[ "$PR_HEAD_REPO" != "$BASE_REPO" ]]; then
+            echo "Pull request is from a fork. Closing it..."
+            gh pr close "$PR_NUMBER" --repo "$BASE_REPO" --comment "This repository does not accept PRs from forks."
+          else
+            echo "Pull request is from the base repository. No action needed."
+          fi
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}

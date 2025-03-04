@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Ephesis&family=Chonburi&family=Expletus+Sans&family=Raleway&display=swap');
+@import "tailwindcss";
+
+@theme {
+    --color-primary: #2f3e46; /* Deep Forest Green */
+    --color-secondary: #354f52; /* Dark Slate Green */
+    --color-tertiary: #52796f; /* Muted Teal */
+    --color-quaternary: #84a98c; /* Soft Sage */
+    --color-quinary: #cad2c5; /* Pale Mint */
+    --color-senary: #4B2E1E; /* Forest Canopy Dusk */
+    --color-septenary: #5F4B32; /* Misty River */
+    --color-octonary: #4B2E1E; /* Dewy Fern */
+
+    --color-unique-text: #FFC857; /* Amber Gold */
+    --color-gradient1: #f72585; /* Vibrant Coral Red */
+    --color-gradient2: #7209b7; /* Deep Violet */
+    --color-gradient3: #3a0ca3; /* Royal Indigo */
+
+    --font-heading: 'Chonburi', serif;
+    --font-title: 'Raleway', sans-serif;
+    --font-body: 'Expletus Sans', sans-serif;
+    --font-decorative: 'Ephesis', cursive;
+}
+
+@layers base {
+  :root {
+    --text-color: #D8E3E7; /* Icy Silver for crisp readability */
+    --box-color: #121826; /* Midnight Shadow for deep contrast */
+  }
+}
+
+/* Scrollbar Styling */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-custom::-webkit-scrollbar {
+  width: 6px;
+}
+
+.scrollbar-custom::-webkit-scrollbar-thumb {
+  background: rgba(196, 154, 108, 0.7); /* Antique Gold */
+  border-radius: 20px;
+}
+
+.scrollbar-custom::-webkit-scrollbar-thumb:hover {
+  background: rgba(112, 79, 94, 0.9); /* Rosewood Velvet */
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.animate-fadeInUp {
+  animation: fadeInUp 2s ease-out forwards;
+}
+
+@keyframes floatAndGlow {
+  0%, 100% {
+    transform: translateY(0px);
+    box-shadow: 0px 0px 20px rgba(196, 154, 108, 0.3);
+  }
+  50% {
+    transform: translateY(-3px);
+    box-shadow: 0px 0px 35px rgba(196, 154, 108, 0.6);
+  }
+}
+.animate-floatAndGlow {
+  animation: floatAndGlow 4s ease-in-out infinite;
+}
+
+.hover-effect:hover {
+  transform: scale(1.1);
+  text-shadow: 0px 4px 10px rgba(196, 154, 108, 0.7);
+  transition: all 0.3s ease-in-out;
+}
+
+@keyframes softGlow {
+  0%, 100% {
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.3); /* Always White Glow */
+  }
+  50% {
+    box-shadow: 0 0 12px rgba(255, 255, 255, 0.7); /* Brighter White Glow */
+  }
+}
+
+.animate-softGlow {
+  animation: softGlow 4s infinite ease-in-out;
+}
