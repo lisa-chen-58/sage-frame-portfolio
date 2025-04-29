@@ -17,7 +17,7 @@ const InfoBanner = () => {
           rel="noopener noreferrer"
           className="underline font-semibold text-blue-600 hover:text-blue-800"
         >
-          thechenfolio.web.app
+          https://www.lisachenworks.com/
         </a>.
       </p>
       <button onClick={() => setIsVisible(false)} className="ml-4 text-gray-700 hover:text-gray-900">
