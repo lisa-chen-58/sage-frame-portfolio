@@ -12,7 +12,7 @@ const InfoBanner = () => {
         🚀 This is the first iteration demo (open-source) of my original portfolio.
         My work has improved since this posting! To see my latest portfolio, visit{" "}
         <a
-          href="https://thechenfolio.web.app"
+          href="https://www.lisachenworks.com/"
           target="_blank"
           rel="noopener noreferrer"
           className="underline font-semibold text-blue-600 hover:text-blue-800"
